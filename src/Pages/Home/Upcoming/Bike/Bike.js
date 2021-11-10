@@ -9,7 +9,7 @@ const Bike = (props) => {
     const { name, img, price, description } = props.bike;
     return (
         <Grid item xs={4} sm={4} md={4}>
-            <Card sx={{ minWidth: 275, border: 1, borderColor: 'grey.500', borderRadius: 1, boxShadow: 3 }}>
+            <Card sx={{ minWidth: 275, border: 1, borderColor: 'grey.500', borderRadius: 1 }}>
                 <CardMedia
                     component="img"
                     style={{ width: '310px', height: '165px', margin: '0 auto' }}

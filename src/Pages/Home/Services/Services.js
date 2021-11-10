@@ -38,8 +38,8 @@ const Services = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Container>
-                <Typography sx={{ color: 'secondary.main', fontWeight: 500, }} variant="h5" component="div">
-                    Bike Service we provide & Repairing
+                <Typography sx={{ color: 'secondary.main', fontWeight: 500, m: 3 }} variant="h5" component="div">
+                    Cycle Services we provide & Repairing
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {

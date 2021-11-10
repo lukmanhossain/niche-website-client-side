@@ -40,6 +40,7 @@ const bikes = [
     {
         img: "https://i.ibb.co/gT68C7b/222.jpg",
         name: "Free Delivery",
+        price: "$160",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     }
 ]
@@ -48,7 +49,7 @@ const Bikes = () => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             <Container>
-                <Typography sx={{ color: 'secondary.main', fontWeight: 600, }} variant="h5" component="div">
+                <Typography sx={{ color: 'secondary.main', fontWeight: 600, m: 3 }} variant="h5" component="div">
                     Our Upcoming Cycles
                 </Typography>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
