@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
+import Navigation from './Pages/Shared/Navigation/Navigation';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/nav">
+            <Navigation></Navigation>
           </Route>
           {/* <Route path="/users">
             <Users />

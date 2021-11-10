@@ -1,9 +1,14 @@
 import React from 'react';
+import Navigation from '../../Shared/Navigation/Navigation';
+import Services from '../Services/Services';
+import Bikes from '../Upcoming/Bikes/Bikes';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is home</h2>
+            <Navigation></Navigation>
+            <Services></Services>
+            <Bikes></Bikes>
         </div>
     );
 };
