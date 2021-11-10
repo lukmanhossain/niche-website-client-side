@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import Navigation from './Pages/Shared/Navigation/Navigation';
+import Purchase from './Pages/Home/Purchase/Purchase';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
           <Route path="/nav">
             <Navigation></Navigation>
           </Route>
-          {/* <Route path="/users">
-            <Users />
-        </Route> */}
+          <Route path="/purchase">
+            <Purchase></Purchase>
+          </Route>
           <Route path="/">
             <Home />
           </Route>

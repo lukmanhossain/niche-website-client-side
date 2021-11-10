@@ -14,12 +14,12 @@ const services = [
     },
     {
         img: "https://i.ibb.co/gT68C7b/222.jpg",
-        name: "Adjust & Install",
+        name: "Complete Overhaul",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
         img: "https://i.ibb.co/gT68C7b/222.jpg",
-        name: "Personal bike fit",
+        name: "Custom parts & Accessories",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
@@ -29,7 +29,7 @@ const services = [
     },
     {
         img: "https://i.ibb.co/gT68C7b/222.jpg",
-        name: "Free Delivery",
+        name: "Cycle fitting and Delivery",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     }
 ]
