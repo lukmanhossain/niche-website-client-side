@@ -3,31 +3,59 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import Navigation from './Pages/Shared/Navigation/Navigation';
-import Purchase from './Pages/Home/Purchase/Purchase';
+import NotFound from './Pages/NotFound/NotFound';
+import BuyNow from './Pages/BuyNow/BuyNow/BuyNow';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
+import AuthProvider from './Contexts/AuthProvider/AuthProvider';
+import Explore from './Pages/Explore/Explore';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import BuyNowModal from './Pages/BuyNow/BuyNowModal/BuyNowModal';
+import Dashboard from './Pages/DashBoard/Dashboard/Dashboard';
+
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/nav">
-            <Navigation></Navigation>
-          </Route>
-          <Route path="/purchase">
-            <Purchase></Purchase>
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/explore">
+              <Explore />
+            </Route>
+            <Route path="/navigation">
+              <Navigation></Navigation>
+            </Route>
+            <PrivateRoute path="/buynow">
+              <BuyNow></BuyNow>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Dashboard />
+            </PrivateRoute>
+            <Route path="/buynowmodal">
+              <BuyNowModal></BuyNowModal>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+        </Router>
+      </AuthProvider>
     </div >
   );
 }

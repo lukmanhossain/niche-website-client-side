@@ -15,29 +15,29 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        label: 'San Francisco – Oakland Bay Bridge, United States',
+        label: 'SPORT ELECTRIC BIKE',
         imgPath:
-            'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+            'https://i.ibb.co/LNYhSh4/1.jpg',
     },
     {
-        label: 'Bird',
+        label: 'FELT B14 2018',
         imgPath:
-            'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+            'https://i.ibb.co/BKDgL76/3.jpg',
     },
     {
-        label: 'Bali, Indonesia',
+        label: 'MANTIS FULL SUSPENSION',
         imgPath:
-            'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+            'https://i.ibb.co/3vvctG4/3.jpg',
     },
     {
-        label: 'Goč, Serbia',
+        label: 'FELT B14 2012',
         imgPath:
-            'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+            'https://i.ibb.co/rx0W7L7/4.jpg',
     },
     {
-        label: 'Goč, Serbia',
+        label: 'THE RANGER 3.0',
         imgPath:
-            'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+            'https://i.ibb.co/zrzhW1P/5.jpg',
     },
 ];
 
@@ -61,10 +61,10 @@ const Banner = () => {
     return (
         <Grid container spacing={2} sx={{ mt: 1, bgcolor: '#f3e5f5', color: 'white' }}>
             <Grid item xs={12} md={5} sx={{ px: 2 }}>
-                <Typography variant="h4" sx={{ fontSize: 30, color: 'black', marginY: 4 }}>
+                <Typography variant="h4" sx={{ fontSize: 30, color: 'black', marginY: 3 }}>
                     Oop! Look Street Bicycle
                 </Typography>
-                <Typography variant="h6" sx={{ fontSize: 16, fontWeight: 380, color: 'black', marginBottom: 2 }}>
+                <Typography variant="h6" sx={{ fontSize: 16, fontWeight: 380, color: 'black', marginBottom: 1, padding: 2 }}>
                     An interval of time during which a sequence of a recurring succession of events or phenomena is completed. A bicycle, also called a bike or cycle, is a human-powered or motor-powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other. A bicycle rider is called a cyclist, or bicyclist.
                 </Typography>
             </Grid>

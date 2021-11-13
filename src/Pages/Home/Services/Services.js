@@ -8,27 +8,27 @@ import Service from '../Service/Service';
 
 const services = [
     {
-        img: "https://i.ibb.co/gT68C7b/222.jpg",
+        img: "https://i.ibb.co/ZB0hDSp/1.jpg",
         name: "Tune-ups & Builds",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
-        img: "https://i.ibb.co/gT68C7b/222.jpg",
+        img: "https://i.ibb.co/6874jy2/all-single-parts-components-of-blue-black-modern-aerodynmic-carbon-fiber-racing-sport-road-bike-bicy.jpg",
         name: "Complete Overhaul",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
-        img: "https://i.ibb.co/gT68C7b/222.jpg",
+        img: "https://i.ibb.co/28W1LNq/2.jpg",
         name: "Custom parts & Accessories",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
-        img: "https://i.ibb.co/gT68C7b/222.jpg",
+        img: "https://i.ibb.co/qkZ63wS/3.jpg",
         name: "Parts Modify",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     },
     {
-        img: "https://i.ibb.co/gT68C7b/222.jpg",
+        img: "https://i.ibb.co/P9vgKxs/2.jpg",
         name: "Cycle fitting and Delivery",
         description: "an interval of time during which a sequence of a recurring succession of events or phenomena is completed"
     }
