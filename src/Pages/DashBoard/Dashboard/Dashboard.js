@@ -6,12 +6,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -34,7 +28,7 @@ const drawerWidth = 180;
 function Dashboard(props) {
     const { window } = props;
     let { path, url } = useRouteMatch();
-    const { admin } = useAuth();
+    const { admin, user, logOut } = useAuth();
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
@@ -59,6 +53,14 @@ function Dashboard(props) {
                     <Button color="inherit">Make Admin</Button>
                 </NavLink>
             </Box>}
+            {
+                user?.email ?
+                    <Button onClick={logOut} style={{ textDecoration: 'none', color: 'blue' }} color="inherit">LogOut</Button>
+                    :
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/login">
+                        <Button color="inherit">Login</Button>
+                    </NavLink>
+            }
         </div>
     );
 

@@ -15,11 +15,11 @@ const Booking = () => {
     const [purchase, setPurchase] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/bookings?email=${user.email}`
+        const url = `https://pure-brushlands-02882.herokuapp.com/bookings?email=${user.email}`
         fetch(url)
             .then(res => res.json())
             .then(data => setPurchase(data));
-    }, [])
+    }, [user.email])
 
     return (
         <div>

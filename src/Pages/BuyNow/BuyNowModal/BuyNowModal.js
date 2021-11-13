@@ -49,7 +49,7 @@ const BuyNowModal = ({ openBuyNow, handleBuyNowClose, buynow, setBuySuccess }) =
             price,
             cycle_name: name,
         }
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://pure-brushlands-02882.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
