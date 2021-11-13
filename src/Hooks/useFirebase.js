@@ -82,7 +82,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unSubscribed;
-    }, [])
+    }, [auth])
 
     useEffect(() => {
         fetch(`https://pure-brushlands-02882.herokuapp.com/users/${user.email}`)

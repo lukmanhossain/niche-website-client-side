@@ -23,7 +23,6 @@ import Review from '../Review/Review';
 import useAuth from '../../../Hooks/useAuth';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 import ManageAllOrder from '../ManageAllOrderPage/ManageAllOrder';
-import Products from '../../Home/Products/Products';
 import ManageProducts from '../ManageProducts/ManageProducts';
 
 const drawerWidth = 170;
@@ -52,7 +51,7 @@ function Dashboard(props) {
                 <Button color="inherit">My Orders</Button>
             </NavLink>
             <NavLink style={{ textDecoration: 'none' }} to={`${url}/review`}>
-                <Button color="inherit">Take Review</Button>
+                <Button color="inherit">Rating Page</Button>
             </NavLink>
             {admin && <Box>
                 <NavLink style={{ textDecoration: 'none' }} to={`${url}/makeAdmin`}>

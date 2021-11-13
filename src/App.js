@@ -16,7 +16,6 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import BuyNowModal from './Pages/BuyNow/BuyNowModal/BuyNowModal';
 import Dashboard from './Pages/DashBoard/Dashboard/Dashboard';
 import ManageAllOrder from './Pages/DashBoard/ManageAllOrderPage/ManageAllOrder';
-import Products from './Pages/Home/Products/Products';
 import ManageProducts from './Pages/DashBoard/ManageProducts/ManageProducts';
 
 
