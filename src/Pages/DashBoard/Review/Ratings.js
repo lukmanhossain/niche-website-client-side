@@ -3,12 +3,18 @@ import Paper from '@mui/material/Paper';
 import { Grid } from '@mui/material';
 import Rating from 'react-rating';
 import Typography from '@mui/material/Typography';
+import Avatar from '@mui/material/Avatar';
 
 const Ratings = (props) => {
-    const { name, description } = props.ratings;
+    const { img, name, description } = props.ratings;
     return (
         <Grid item xs={12} sm={6} md={4}>
             <Paper elevation={3} sx={{ p: 3 }} >
+                <Avatar
+                    alt="Remy Sharp"
+                    src={img}
+                    sx={{ width: 60, height: 60, ml: 12 }}
+                />
                 <Typography sx={{ color: 'info.main', fontWeight: 500 }} variant="h6" gutterBottom component="div">
                     {name}
                 </Typography>
