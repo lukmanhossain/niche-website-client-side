@@ -22,8 +22,11 @@ import Payment from '../Payment/Payment';
 import Review from '../Review/Review';
 import useAuth from '../../../Hooks/useAuth';
 import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import ManageAllOrder from '../ManageAllOrderPage/ManageAllOrder';
+import Products from '../../Home/Products/Products';
+import ManageProducts from '../ManageProducts/ManageProducts';
 
-const drawerWidth = 180;
+const drawerWidth = 170;
 
 function Dashboard(props) {
     const { window } = props;
@@ -39,6 +42,9 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
+            <NavLink style={{ textDecoration: 'none' }} to="/home">
+                <Button color="inherit">Home</Button>
+            </NavLink>
             <NavLink style={{ textDecoration: 'none' }} to={`${url}/payment`}>
                 <Button color="inherit">Payment Now</Button>
             </NavLink>
@@ -51,6 +57,12 @@ function Dashboard(props) {
             {admin && <Box>
                 <NavLink style={{ textDecoration: 'none' }} to={`${url}/makeAdmin`}>
                     <Button color="inherit">Make Admin</Button>
+                </NavLink>
+                <NavLink style={{ textDecoration: 'none' }} to={`${path}/manageOrder`}>
+                    <Button color="inherit">Manage All Order</Button>
+                </NavLink>
+                <NavLink style={{ textDecoration: 'none' }} to={`${path}/manageproducts`}>
+                    <Button color="inherit">Manage Products</Button>
                 </NavLink>
             </Box>}
             {
@@ -136,6 +148,12 @@ function Dashboard(props) {
                     </AdminRoute>
                     <Route path={`${path}/payment`}>
                         <Payment></Payment>
+                    </Route>
+                    <Route path={`${path}/manageOrder`}>
+                        <ManageAllOrder></ManageAllOrder>
+                    </Route>
+                    <Route path={`${path}/manageproducts`}>
+                        <ManageProducts></ManageProducts>
                     </Route>
                     <Route path={`${path}/review`}>
                         <Review></Review>
