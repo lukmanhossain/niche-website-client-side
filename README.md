@@ -6,9 +6,15 @@ https://pure-brushlands-02882.herokuapp.com
 
 #Short Description About Our Site:
 
-*You Can Buy Cycle anytime from our Store.
-*Products are available and always updated.
-*Resonable Price.
-*Client Setisfiction.
-*1st Month free Service & Free home Delivery.
-*Easy to buy products and payment.
+1.You Can Buy Cycle anytime from our Store.
+
+2.Products are available and always updated.
+
+3.Resonable Price.
+
+4.Client Setisfiction.
+
+5.Firstst Month free Service & Free home
+  Delivery.
+  
+6.Easy to buy products and payment.
