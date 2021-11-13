@@ -27,6 +27,9 @@ const Navigation = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Cycle Bazar
                     </Typography>
+                    <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/home">
+                        <Button color="inherit">Home</Button>
+                    </NavLink>
                     <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/explore">
                         <Button color="inherit">Explore</Button>
                     </NavLink>
